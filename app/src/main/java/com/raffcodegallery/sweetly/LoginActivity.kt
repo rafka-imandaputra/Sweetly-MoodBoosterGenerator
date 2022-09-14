@@ -18,7 +18,7 @@ class LoginActivity : AppCompatActivity() {
         btn_submit.setOnClickListener {
             val user_name = et_user_name.text.toString();
             val password = et_password.text.toString();
-            if (user_name == "aku" && password == "bahagia") {
+            if (user_name == "aku" && password == "senyum") {
                 startActivity(Intent(this, MainActivity::class.java))
                 Toast.makeText(this, "Login Success!", Toast.LENGTH_SHORT).show()
             } else {

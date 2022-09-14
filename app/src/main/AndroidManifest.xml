@@ -26,7 +26,7 @@
             android:name=".MoodBoosterFormActivity"
             android:exported="false" />
         <activity
-            android:name=".BirthdayActivity"
+            android:name=".BirthdayGenActivity"
             android:exported="false" />
         <activity
             android:name=".AboutDeveloperActivity"

@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         var birthday: ImageView = findViewById(R.id.birthGen)
 
         birthday.setOnClickListener {
-            startActivity(Intent(this, BirthdayActivity::class.java))
+            startActivity(Intent(this, BirthdayGenActivity::class.java))
         }
 
         var mood_level: ImageView = findViewById(R.id.moodLevel)
