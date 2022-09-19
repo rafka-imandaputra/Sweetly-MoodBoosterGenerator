@@ -2,16 +2,30 @@ package com.raffcodegallery.sweetly
 
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
-import android.view.View.OnClickListener;
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var firebaseAuth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var mood: ImageView = findViewById(R.id.moodGen)
+        var logout: Button = findViewById(R.id.button)
+        firebaseAuth = FirebaseAuth.getInstance()
+
+        logout.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            val intent = Intent(this, SignInActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+        }
 
         mood.setOnClickListener {
             startActivity(Intent(this, MoodBoosterFormActivity::class.java))
@@ -32,12 +46,6 @@ class MainActivity : AppCompatActivity() {
         var about: ImageView = findViewById(R.id.about)
 
         about.setOnClickListener {
-            startActivity(Intent(this, AboutDeveloperActivity::class.java))
-        }
-
-        var ig: ImageView = findViewById(R.id.ig_fol)
-
-        ig.setOnClickListener{
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("http://www.instagram.com/raff_imanda")))
         }
     }
