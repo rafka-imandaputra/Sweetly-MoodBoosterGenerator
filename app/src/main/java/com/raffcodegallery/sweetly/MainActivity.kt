@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var mood: ImageView = findViewById(R.id.moodGen)
-        var logout: Button = findViewById(R.id.button)
+        var logout: TextView = findViewById(R.id.kembali)
         firebaseAuth = FirebaseAuth.getInstance()
 
         logout.setOnClickListener {

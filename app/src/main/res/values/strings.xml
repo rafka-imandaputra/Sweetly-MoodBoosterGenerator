@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Sweetly</string>
+    <string name="my_text"><u>Ketuk untuk logout</u></string>
 </resources>
