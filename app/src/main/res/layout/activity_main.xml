@@ -190,7 +190,7 @@ android:background="@drawable/bg">
     android:layout_marginTop="3dp">
 
     <ImageView
-        android:id="@+id/about"
+        android:id="@+id/musicZone"
         android:layout_width="380dp"
         android:layout_height="80dp"
         android:layout_marginLeft="18dp"
@@ -210,7 +210,7 @@ android:background="@drawable/bg">
         android:layout_height="wrap_content"
         android:layout_marginLeft="105dp"
         android:layout_marginTop="14dp"
-        android:text="Follow IG developer"
+        android:text="Zona bermusik"
         android:textColor="#d703082b"
         android:textSize="16dp"
         android:textStyle="bold" />
@@ -220,7 +220,7 @@ android:background="@drawable/bg">
         android:layout_height="wrap_content"
         android:layout_marginLeft="105dp"
         android:layout_marginTop="40dp"
-        android:text="Lebih dekat dengan developer!"
+        android:text="Beritahu dunia lagu favoritmu!"
         android:textColor="#6003082b"
         android:textSize="14dp"
         android:textStyle="bold" />
@@ -239,6 +239,20 @@ android:background="@drawable/bg">
             android:layout_marginLeft="25dp"
             android:clickable="true"
             android:text="@string/my_text"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.302"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:clickable="true"
+            android:text="@string/my_text2"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

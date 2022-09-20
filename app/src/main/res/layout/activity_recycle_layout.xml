@@ -6,33 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg_form"
     tools:context=".RecycleLayout">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="30dp"
-        android:layout_marginBottom="29dp"
-        android:layout_marginTop="125dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="-3sp"
-            android:fontFamily="sans-serif-black"
-            android:text="Level Mood dan pengaruhnya"
-            android:textColor="#fff"
-            android:textSize="36dp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_alignParentEnd="true"
-            android:adjustViewBounds="true" />
-
-    </RelativeLayout>
 
 
     <androidx.recyclerview.widget.RecyclerView

@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Sweetly</string>
     <string name="my_text"><u>Ketuk untuk logout</u></string>
+    <string name="my_text2"><u>Follow IG developer</u></string>
+    <string name="my_text3"><u>&lt;- Ketuk untuk kembali</u></string>
 </resources>
