@@ -13,13 +13,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
+        android:resizeableActivity="false"
         android:theme="@style/Theme.SweetlyByRaffCodeGallery"
         tools:targetApi="31">
         <activity
             android:name=".YoutubeActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".SignInActivity"
+            android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,27 +32,35 @@
         </activity>
         <activity
             android:name=".SignUpActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".RecycleLayout"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".MoodLevelActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".MoodBoosterResultActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".MoodBoosterFormActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".BirthdayGenActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".AboutDeveloperActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
     </application>
 
