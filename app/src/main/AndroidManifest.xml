@@ -4,6 +4,7 @@
     package="com.raffcodegallery.sweetly">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -17,8 +18,16 @@
         android:theme="@style/Theme.SweetlyByRaffCodeGallery"
         tools:targetApi="31">
         <activity
-            android:name=".MusicZone"
+            android:name=".MusicZoneTemporary"
             android:exported="false" />
+        <activity
+            android:name=".MusicZonePlayer"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MusicZone"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".YoutubeActivity"
             android:exported="false"

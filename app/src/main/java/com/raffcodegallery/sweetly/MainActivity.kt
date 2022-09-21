@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         var musicZone: ImageView = findViewById(R.id.musicZone)
         musicZone.setOnClickListener {
-            startActivity(Intent(this, MusicZone::class.java))
+            startActivity(Intent(this, MusicZoneTemporary::class.java))
         }
 
         var about: TextView = findViewById(R.id.about)
