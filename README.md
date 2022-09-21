@@ -10,7 +10,7 @@
   In addition, users are also invited to listen to their favorite songs through Sweetly's web view, share the music they like with other users, or see descriptions related to mood types and explanations.
 </p>
 <p>
-  That's all, this is just a simple application, to download it please visit this link <a href="https://drive.google.com/file/d/1a1IbWViJztJzsWR7OSDu09dluhQvQUuY/view?usp=sharing" target="_blank">Sweetly Download</a>
+  That's all, this is just a simple application, to download it please visit this link <a href="https://drive.google.com/file/d/1a1IbWViJztJzsWR7OSDu09dluhQvQUuY/view?usp=sharing/?target=_blank" target="_blank">Sweetly Download</a>
 </p>
 
 <h3>User Flow:</h3>
